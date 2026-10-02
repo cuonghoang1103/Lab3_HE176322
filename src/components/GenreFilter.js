@@ -34,8 +34,8 @@ function GenreFilter({
             onChange={(e) => onSortChange(e.target.value)}
           >
             <option value="default">Default</option>
-            <option value="high">Rating: High → Low</option>
-            <option value="low">Rating: Low → High</option>
+            <option value="high">Rating: High -> Low</option>
+            <option value="low">Rating: Low -> High</option>
           </Form.Select>
         </InputGroup>
       </Col>
