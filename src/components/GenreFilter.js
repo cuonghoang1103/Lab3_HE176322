@@ -1,6 +1,5 @@
-import { Row, Col, Form, InputGroup } from "react-bootstrap";
+import { Col, Form, InputGroup, Row } from "react-bootstrap";
 
-// Bộ lọc gồm 2 ô: chọn thể loại và chọn cách sắp xếp
 function GenreFilter({
   genres,
   selectedGenre,

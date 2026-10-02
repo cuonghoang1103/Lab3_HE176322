@@ -2,7 +2,6 @@ import { Alert } from "react-bootstrap";
 import MovieItem from "./MovieItem";
 
 function MovieList({ movies, favorites, onToggleFavorite, onViewDetail }) {
-  // Nếu không có phim nào phù hợp thì hiện thông báo
   if (movies.length === 0) {
     return <Alert variant="warning">Không tìm thấy phim nào.</Alert>;
   }

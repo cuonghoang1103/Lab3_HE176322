@@ -4,7 +4,6 @@ import { FaFilm, FaMoon, FaSun } from "react-icons/fa";
 import { ThemeContext } from "../context/ThemeContext";
 
 function Header() {
-  // Lấy theme và hàm đổi theme từ context
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (

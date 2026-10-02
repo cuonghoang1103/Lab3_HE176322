@@ -1,7 +1,6 @@
 import { Modal, Button, Table } from "react-bootstrap";
 
 function MovieDetail({ movie, onClose }) {
-  // Chưa chọn phim nào thì không hiển thị gì
   if (!movie) {
     return null;
   }

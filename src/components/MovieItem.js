@@ -6,7 +6,6 @@ function MovieItem({ movie, isFavorite, onToggleFavorite, onViewDetail }) {
   return (
     <Card className="mb-3 shadow-sm">
       <Card.Body className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-        {/* Thông tin phim: Title | Genre | Year | Rating */}
         <div>
           <Card.Title className="mb-2">{movie.title}</Card.Title>
           <div>
@@ -18,7 +17,6 @@ function MovieItem({ movie, isFavorite, onToggleFavorite, onViewDetail }) {
           </div>
         </div>
 
-        {/* 2 nút: Favorite và View Details */}
         <div className="d-flex gap-2">
           <Button
             variant={isFavorite ? "warning" : "outline-warning"}
