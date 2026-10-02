@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./App.css";
 import { movies } from "./datas/movies";
 import Header from "./components/Header";
@@ -59,21 +59,21 @@ function App() {
       <Header />
 
       <Container>
-        {/* Thanh tìm kiếm, lọc thể loại, sắp xếp */}
-        <Row className="g-2 mb-4">
-          <Col md={6}>
-            <SearchBar onSearch={setKeyword} />
-          </Col>
-          <Col md={6}>
-            <GenreFilter
-              genres={genres}
-              selectedGenre={selectedGenre}
-              onGenreChange={setSelectedGenre}
-              sortBy={sortBy}
-              onSortChange={setSortBy}
-            />
-          </Col>
-        </Row>
+        {/* Hàng 1: ô tìm tên phim */}
+        <div className="mb-2">
+          <SearchBar onSearch={setKeyword} />
+        </div>
+
+        {/* Hàng 2: lọc thể loại và sắp xếp, nằm dưới ô tìm kiếm */}
+        <div className="mb-4">
+          <GenreFilter
+            genres={genres}
+            selectedGenre={selectedGenre}
+            onGenreChange={setSelectedGenre}
+            sortBy={sortBy}
+            onSortChange={setSortBy}
+          />
+        </div>
 
         {/* Thống kê */}
         <p className="fw-semibold">
